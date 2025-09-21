@@ -1,0 +1,45 @@
+.logo-image {
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.details-section {
+    display: flex;
+    gap: 30px;
+}
+
+.factSheet-wrapper {
+    flex-basis: 33.33%;
+}
+
+.description-wrapper {
+    flex-basis: 66.66%;
+}
+
+.additional-info-section {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+    border-top: 0.1rem solid #e0e0e0;
+    padding-top: 4rem;
+}
+
+.team-section {
+    flex-basis: 66.66%;
+}
+
+.contact-section {
+    flex-basis: 33.33%;
+}
+
+@media (max-width: 992px) {
+    .details-section,
+    .additional-info-section {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,14 @@
+.pressKit-container {
+    margin: 1.5rem 17.5rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.sidebar-wrapper {
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex-basis: 75%;
+}

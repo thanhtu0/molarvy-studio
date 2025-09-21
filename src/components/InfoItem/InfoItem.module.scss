@@ -1,0 +1,27 @@
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    margin: 0 0 4px 0;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--clr-black);
+}
+
+.info-content p,
+.info-content a {
+    margin: 0;
+    display: block;
+    color: var(--clr-link);
+    text-decoration: none;
+}
+
+.info-content a:hover {
+    text-decoration: underline;
+    color: var(--clr-link-hover);
+}
+
+.info-content p {
+    color: var(--clr-gray);
+}

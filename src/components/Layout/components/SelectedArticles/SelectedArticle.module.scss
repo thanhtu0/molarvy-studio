@@ -1,0 +1,35 @@
+.article-item {
+    margin: 0 0 2.5rem 0;
+    padding-left: 2rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.9rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: var(--clr-black-1);
+    }
+}
+
+.quote-text {
+    margin: 0 0 0.1rem 0;
+    color: var(--blr-gray);
+    line-height: 1.6;
+}
+
+.quote-attribution {
+    color: #555;
+    font-style: normal;
+
+    a {
+        color: var(--clr-link);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

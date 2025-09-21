@@ -1,0 +1,43 @@
+.video-item {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.video-title-line {
+    display: flex;
+    justify-content: space-start;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.26rem;
+    color: #555;
+
+    a {
+        color: var(--clr-link);
+        text-decoration: none;
+        font-weight: 300;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.video-embed-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

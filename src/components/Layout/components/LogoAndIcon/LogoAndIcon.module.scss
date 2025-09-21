@@ -1,0 +1,22 @@
+.download-link {
+    display: block;
+    padding: 1.2rem 1.5rem;
+    border: 0.1rem solid #cce5ff;
+    background-color: #f8f9fa;
+    border-radius: 0.4rem;
+    color: var(--clr-link);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: #e2e6ea;
+        text-decoration: underline;
+    }
+}
+
+.logo-image {
+    display: block;
+    max-width: 25rem;
+    width: 100%;
+    height: auto;
+}

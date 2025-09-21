@@ -1,0 +1,23 @@
+.contact-item {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact-label {
+    margin: 0 0 0.4rem 0;
+    color: var(--clr-gray);
+}
+
+.contact-link {
+    color: var(--clr-link);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+        color: var(--clr-link-hover);
+        text-decoration: underline;
+    }
+}
