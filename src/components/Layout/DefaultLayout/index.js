@@ -1,10 +1,10 @@
-import Header from './Footer';
-import Footer from './Header';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 function DefaultLayout({ children }) {
     return (
         <div>
-            <Header />
+            <Navbar />
             <div className="container">
                 <div className="content">{children}</div>
             </div>

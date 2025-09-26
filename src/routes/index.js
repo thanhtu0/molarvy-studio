@@ -14,7 +14,7 @@ import Studio from '~/pages/Studio';
 // If a user is not logged in, they will be automatically redirected to the login page.
 const publicRoutes = [
     { path: '/', component: Home },
-    { path: '/new', component: New },
+    { path: '/news', component: New },
     { path: '/presskit', component: PressKit, layout: PressKitLayout },
     {
         path: '/presskit',
