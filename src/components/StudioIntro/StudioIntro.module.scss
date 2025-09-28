@@ -1,0 +1,49 @@
+.intro-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4rem;
+    padding: 3rem 6rem;
+    max-width: 100rem;
+    text-align: center;
+    // border: 1px solid rgba(150, 150, 200, 0.3);
+    // backdrop-filter: blur(10px);
+}
+
+.brand-name,
+.studio-subtitle {
+    font-size: 7rem;
+    font-family: var(--font-logo);
+    color: var(--clr-white);
+    letter-spacing: 1rem;
+    margin-bottom: -6rem;
+}
+
+.studio-subtitle {
+    margin-bottom: 3rem;
+}
+
+.description {
+    color: var(--clr-white);
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.description b {
+    color: rgba(150, 150, 200, 0.3);
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+}
+
+.description a {
+    color: var(--clr-white);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.description a:hover {
+    color: var(--clr-link);
+}

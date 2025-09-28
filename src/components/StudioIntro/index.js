@@ -1,11 +1,12 @@
 import classNames from 'classnames/bind';
 import styles from './StudioIntro.module.scss';
+import { bg_studio } from '~/utils/images';
 
 const cx = classNames.bind(styles);
 
 const StudioIntro = () => {
     return (
-        <div className={cx('intro-container')}>
+        <div className={cx('intro-container')} style={{ backgroundImage: `url(${bg_studio})` }}>
             <h1 className={cx('brand-name')}>Molarvy</h1>
             <h1 className={cx('studio-subtitle')}>STUDIOS</h1>
             <p className={cx('description')}>
@@ -16,7 +17,7 @@ const StudioIntro = () => {
                 Moon Studios is a distributed development house: All team members are spread throughout the world,
                 allowing Moon to work with the best and most talented people in the games industry. In 2011, Moon
                 Studios partnered with Microsoft to develop
-                <b>Ori and the Will of the Wisps</b>
+                <b> Ori and the Will of the Wisps</b>
             </p>
             <p className={cx('description')}>
                 To learn more about <b>No Rest for the Wicked</b>, Moon Studios’ next highly-anticipated action RPG
