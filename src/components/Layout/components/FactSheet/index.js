@@ -1,8 +1,9 @@
 import classNames from 'classnames/bind';
 import styles from './FactSheet.module.scss';
+
 import InfoItem from '~/components/InfoItem';
 import { Link } from 'react-router-dom';
-import Section from '~/components/Section';
+import Section from '~/components/common/Section';
 
 const cx = classNames.bind(styles);
 

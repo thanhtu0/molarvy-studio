@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './LogoAndIcon.module.scss';
-import Section from '~/components/Section';
+import Section from '~/components/common/Section';
 
 import { logo } from '~/utils/images';
 
