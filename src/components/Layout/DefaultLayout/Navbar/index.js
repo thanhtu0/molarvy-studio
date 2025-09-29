@@ -16,6 +16,9 @@ const Navbar = () => {
             <div className={cx('navbar-links-container')}>
                 <ul>
                     <li>
+                        <Link to="/about">ABOUT</Link>
+                    </li>
+                    <li>
                         <Link to="/news">NEWS</Link>
                     </li>
                     <li>

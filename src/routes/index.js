@@ -4,6 +4,7 @@ import { Navigate } from 'react-router-dom';
 import { PressKitLayout } from '~/components/Layout';
 
 import Home from '~/pages/Home';
+import About from '~/pages/About';
 import New from '~/pages/News';
 import PressKit from '~/pages/PressKit';
 import Store from '~/pages/Store';
@@ -15,6 +16,7 @@ import Studio from '~/pages/Studio';
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/news', component: New },
+    { path: '/about', component: About },
     { path: '/presskit', component: PressKit, layout: PressKitLayout },
     {
         path: '/presskit',

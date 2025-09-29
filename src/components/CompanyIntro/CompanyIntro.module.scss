@@ -1,0 +1,22 @@
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 47rem;
+}
+
+.description {
+    max-width: 90rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    color: var(--clr-black);
+
+    p {
+        margin: 1.6rem 0;
+    }
+}
