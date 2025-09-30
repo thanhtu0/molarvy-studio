@@ -9,9 +9,8 @@ const cx = classNames.bind(styles);
 function LogoAndIcon() {
     return (
         <Section title="Logo & Icon">
-            {/* //FIXME - Chưa thực hiện chức năng tải được. */}
-            <a href="/downloads/logo.jpg" className={cx('download-link')}>
-                download logo files as .zip (1MB)
+            <a href="/downloads/logo.rar" download className={cx('download-link')}>
+                download logo files (.rar)
             </a>
             <img src={logo} alt="Molarvy Logo" className={cx('logo-image')} />
         </Section>
