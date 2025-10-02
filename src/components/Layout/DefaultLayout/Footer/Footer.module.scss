@@ -1,6 +1,6 @@
 .wrapper {
     width: 100%;
-    padding: 5rem 25%;
+    padding: 1rem 20%;
     color: var(--clr-black);
 }
 
@@ -94,6 +94,9 @@
     }
     &.reddit:hover {
         color: #ff4500;
+    }
+    &.instagram:hover {
+        color: #db0cc3;
     }
 }
 

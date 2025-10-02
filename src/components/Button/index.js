@@ -10,9 +10,11 @@ function Button({
     fill = false,
     outline = false,
     viewMore = false,
+    closeBtn = false,
+    closeIcon = false,
     disabledButton = false,
     iconSize = '2.8rem',
-    iconMargin = '16px',
+    iconMargin = '1.6rem',
     children,
     className,
     leftIcon,
@@ -50,13 +52,25 @@ function Button({
         outline,
         disabledButton,
         viewMore,
+        closeBtn,
+        closeIcon,
     });
 
     delete props.icon;
 
     return (
         <Comp className={classes} {...props}>
+            {leftIcon && (
+                <span className={cx('icon')} style={{ fontSize: iconSize, marginRight: iconMargin }}>
+                    {leftIcon}
+                </span>
+            )}
             <span className={cx('title_button')}>{children}</span>
+            {rightIcon && (
+                <span className={cx('icon')} style={{ fontSize: iconSize, marginRight: iconMargin }}>
+                    {rightIcon}
+                </span>
+            )}
         </Comp>
     );
 }

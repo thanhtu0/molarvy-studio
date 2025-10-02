@@ -9,8 +9,8 @@
     text-align: center;
     cursor: pointer;
     border: 1px solid transparent;
+    text-decoration: none;
     user-select: none;
-    // font-family: $fnt-base;
     border-radius: 0.6rem;
 
     + .button-styles {
@@ -28,42 +28,59 @@
     font-size: 2.8rem;
 }
 
+.closeIcon {
+    background: transparent;
+    border: none;
+    padding: 1.2rem;
+    margin: -1.2rem -1.2rem -1.2rem 0;
+    cursor: pointer;
+
+    i {
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: var(--clr-white);
+        transition: color 0.2s ease;
+    }
+
+    &:hover i {
+        padding: 0.5rem;
+        border: 0.1rem dashed var(--clr-white);
+    }
+}
+
 //  Fill, Outline, viewMore Button
 
 .fill {
-    background-color: black;
-    max-width: 150px;
-    border-radius: 0;
-    padding: 10px 32px;
-    color: white;
-
-    span {
-        height: 18px;
-        line-height: 18px;
-        &:hover {
-            font-weight: 600;
-        }
-    }
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem 2rem;
+    color: var(--clr-white);
+    border-color: gray;
+    background-color: var(--clr-black);
 
     &:hover {
-        background-color: white;
-        color: black;
-        border: 1px solid black;
+        color: var(--clr-black);
+        border-color: var(--clr-white);
+        background-color: var(--clr-white);
     }
 }
 
 .outline {
-    width: 180px;
-    height: 50px;
-    padding: 16px 22px;
-    color: black;
-    border-color: black;
-    background-color: white;
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem 2rem;
+    color: var(--clr-black);
+    border-color: var(--clr-black);
+    background-color: var(--clr-white);
 
     &:hover {
-        color: white;
-        border-color: black;
-        background-color: black;
+        color: var(--clr-white);
+        border-color: var(--clr-black);
+        background-color: var(--clr-black);
     }
 }
 
@@ -74,10 +91,26 @@
     margin: 4.8rem 0 0;
     padding: 1rem 8rem;
     text-align: center;
-    border-radius: 0.5px solid black;
+    border-radius: 0.5px solid var(--clr-black);
 
     &:hover {
         transform: translateY(-5px) scale(1.05);
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.closeBtn {
+    background: var(--clr-white);
+    border: 0.8px solid var(--clr-white);
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+
+    &:hover {
+        color: var(--clr-white);
+        background: #000;
+        border-color: #000;
     }
 }

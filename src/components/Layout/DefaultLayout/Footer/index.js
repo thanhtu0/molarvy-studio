@@ -72,6 +72,15 @@ function Footer() {
                             >
                                 <i className="fa-brands fa-reddit"></i>
                             </a>
+
+                            <a
+                                href="https://reddit.com/r/molarvy"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={cx('icon', 'instagram')}
+                            >
+                                <i className="fa-brands fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
