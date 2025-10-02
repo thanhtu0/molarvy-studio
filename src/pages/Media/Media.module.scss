@@ -1,0 +1,29 @@
+.media-page {
+    margin-top: 10rem;
+}
+
+.main-media-title {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 9.6rem;
+    font-family: var(--font-logo);
+    color: var(--clr-black);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.64rem;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}

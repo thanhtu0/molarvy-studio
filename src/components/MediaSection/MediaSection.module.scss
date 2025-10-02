@@ -1,0 +1,13 @@
+.media-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+}
