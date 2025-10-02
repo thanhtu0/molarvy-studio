@@ -2,7 +2,6 @@ import classNames from 'classnames/bind';
 import styles from './Navbar.module.scss';
 
 import { Link } from 'react-router-dom';
-import { logo_remove_bg } from '~/utils/images';
 
 const cx = classNames.bind(styles);
 
@@ -35,10 +34,51 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className={cx('navbar-badge')}>
-                <Link to="/">
-                    <img src={logo_remove_bg} className={cx('badge-content')} />
-                </Link>
+            <div className={cx('social-icons')}>
+                <a
+                    href="https://facebook.com/molarvy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cx('icon', 'facebook')}
+                >
+                    <i className="fa-brands fa-facebook"></i>
+                </a>
+
+                <a
+                    href="https://youtube.com/molarvy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cx('icon', 'youtube')}
+                >
+                    <i className="fa-brands fa-youtube"></i>
+                </a>
+
+                <a
+                    href="https://twitter.com/molarvy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cx('icon', 'twitter')}
+                >
+                    <i className="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a
+                    href="https://reddit.com/r/molarvy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cx('icon', 'reddit')}
+                >
+                    <i className="fa-brands fa-reddit"></i>
+                </a>
+
+                <a
+                    href="https://reddit.com/r/molarvy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cx('icon', 'instagram')}
+                >
+                    <i className="fa-brands fa-instagram"></i>
+                </a>
             </div>
         </nav>
     );
