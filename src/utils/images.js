@@ -4,6 +4,7 @@ import logo_no_text from '~/assets/images/Logo/logo-notext.png';
 import poster from '~/assets/images/Poster/poster_black_white.jpg';
 import poster_sword from '~/assets/images/Poster/poster-sword.jpg';
 import bg_studio from '~/assets/images/Background/bg-studio.png';
+import bg_gv from '~/assets/images/Background/bg-gv.jpg';
 import bg_studio_text from '~/assets/images/Background/bg-studio-text.png';
 import bg_store from '~/assets/images/Background/bg-store.jpg';
 import img_1 from '~/assets/images/img-1.jpg';
@@ -23,6 +24,7 @@ export {
     img_2,
     img_3,
     bg_studio,
+    bg_gv,
     bg_studio_text,
     bg_store,
     member_1,

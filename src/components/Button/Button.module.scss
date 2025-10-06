@@ -114,3 +114,15 @@
         border-color: #000;
     }
 }
+
+.disabledButton {
+    background: var(--clr-black);
+    border: 0.8px solid var(--clr-white);
+    color: var(--clr-white);
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    text-align: center;
+}
