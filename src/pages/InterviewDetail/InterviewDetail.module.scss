@@ -23,6 +23,9 @@
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 8px -10px 92px 39px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 8px -10px 92px 39px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 8px -10px 92px 39px rgba(0, 0, 0, 0.8);
 }
 
 .title {
@@ -49,8 +52,6 @@
 
     .meta-info {
         color: lightslategray;
-        font-size: 2rem;
-        line-height: 4rem;
     }
 
     .question {
