@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './ArticleCard.module.scss';
 import { bg_studio_text } from '~/utils/images';
 
 const cx = classNames.bind(styles);
 
-const ArticleCard = ({ imageSrc, title, description, link = '#' }) => {
+const ArticleCard = ({ imageSrc, title, description, link }) => {
     return (
         <div className={cx('card')} style={{ backgroundImage: `url(${bg_studio_text})` }}>
             <div className={cx('card-image-wrapper')}>
@@ -12,9 +13,9 @@ const ArticleCard = ({ imageSrc, title, description, link = '#' }) => {
             </div>
             <div className={cx('card-content')}>
                 <h3 className={cx('card-title')}>
-                    <a href={link} className={cx('card-link')}>
+                    <Link to={link} className={cx('card-link')}>
                         {title}
-                    </a>
+                    </Link>
                 </h3>
                 <p className={cx('card-description')}>{description}</p>
             </div>

@@ -10,6 +10,7 @@ import Media from '~/pages/Media';
 import PressKit from '~/pages/PressKit';
 import Store from '~/pages/Store';
 import Studio from '~/pages/Studio';
+import InterviewDetailPage from '~/pages/InterviewDetail';
 
 // NOTE - Private routes
 // Routes that require the user to be authenticated (logged in) to access.
@@ -28,6 +29,8 @@ const publicRoutes = [
 
     { path: '/store', component: Store },
     { path: '/molarvy-studio', component: Studio },
+
+    { path: '/interviews/:slug', component: InterviewDetailPage },
 ];
 
 // NOTE - Public routes
