@@ -1,0 +1,111 @@
+.detail-page {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    min-height: 100vh;
+    padding: 12rem 2rem 6rem 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.new-article {
+    max-width: 110rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    margin: 0 0 0.8rem;
+    text-shadow: #ffffff4d 0rem 0rem 0.8rem;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.content {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 4rem;
+
+    .meta-info {
+        color: lightslategray;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .question {
+        font-weight: 700;
+        color: #fff;
+
+        strong {
+            margin-right: 0.8rem;
+        }
+    }
+
+    .statement {
+        font-weight: 500;
+        color: lightgoldenrodyellow;
+
+        &:hover {
+            text-decoration: underline;
+            font-weight: 800;
+        }
+    }
+
+    .answer {
+        color: lightblue;
+    }
+
+    .inline-image {
+        display: block;
+        margin: 4rem auto;
+        max-width: 90%;
+        border-radius: 1rem;
+        border: 0.25rem solid gray;
+    }
+
+    .subheading {
+        font-weight: 700;
+        color: lightgreen;
+    }
+
+    .external-link {
+        display: inline;
+        text-align: left;
+        font-weight: 700;
+        color: #a4c8ff;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.not-found {
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px;
+    color: #fff;
+}
