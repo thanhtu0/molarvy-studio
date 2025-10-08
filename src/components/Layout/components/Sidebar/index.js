@@ -1,23 +1,10 @@
 import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
+import { menuItems } from '~/data/menuItems';
 
 const cx = classNames.bind(styles);
 
 const Sidebar = ({ activeSection, onNavItemClick }) => {
-    const menuItems = [
-        'Factsheet',
-        'Description',
-        'History',
-        'Projects',
-        'Videos',
-        'Images',
-        'Logo & Icon',
-        'Awards & Recognition',
-        'Selected Articles',
-        'Team',
-        'Contact',
-    ];
-
     const createId = (str) => str.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
 
     return (

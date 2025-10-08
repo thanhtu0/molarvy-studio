@@ -2,21 +2,10 @@ import classNames from 'classnames/bind';
 import styles from './Image.module.scss';
 import Section from '~/components/common/Section';
 
-import { poster } from '~/utils/images';
 import { Link } from 'react-router-dom';
+import { imageList } from '~/data/imagesListPresskit';
 
 const cx = classNames.bind(styles);
-
-const imageList = [
-    {
-        src: poster,
-        alt: 'molarvy-studio team photo one',
-    },
-    {
-        src: poster,
-        alt: 'molarvy-studio team photo two',
-    },
-];
 
 function Images() {
     return (

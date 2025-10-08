@@ -56,16 +56,6 @@ const FactSheet = () => {
                 <InfoItem label="Phone:">
                     <p>+84 378 214 843</p>
                 </InfoItem>
-
-                {/* 
-                //TODO - Images
-                //TODO - Logo & Icon
-                //TODO - Award & Recognition
-                //TODO - Selected Articles
-                //NOTE - Row
-                //TODO - Team & Repeating Collaborator
-                //TODO - Contact
-            */}
             </Section>
         </div>
     );
