@@ -1,18 +1,18 @@
 .stats-wrapper {
-    background-color: #1a1c1e;
     padding: 3.6rem;
-    border-radius: 8px;
+    border-radius: 1rem;
+    color: var(--clr-white);
+    flex: 1;
+    min-width: 32rem;
     display: flex;
     flex-direction: column;
-    color: var(--clr-white);
-    border: 1px solid #333;
-    flex: 1;
     justify-content: space-between;
+    border: 1px solid grey;
 }
 
 .progress-bar {
     width: 100%;
-    height: 1rem;
+    height: 0.5rem;
     background-color: #333;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -27,13 +27,14 @@
 .funding-info {
     display: flex;
     align-items: baseline;
-    gap: 1.5rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .pledged-amount,
 .percentage,
 .backers-count {
-    font-size: 3.4rem;
+    font-size: 3rem;
     line-height: 4.2rem;
     font-weight: 700;
 }
@@ -41,7 +42,6 @@
 .pledged-amount,
 .goal-text,
 .backers-label {
-    // color: #e5b567;
     color: #eac57d;
 }
 
@@ -54,28 +54,24 @@
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 2rem;
-    margin-top: 0.5rem;
-}
-
-.backers-label {
-    margin-top: 0.4rem;
-}
-
-.campaign-status {
-    width: 100%;
-    // background-color: #3a3f44 !important;
-    // color: var(--clr-white) !important;
-    // font-weight: 600;
-    // cursor: not-allowed !important;
-
-    // &:hover {
-    //     opacity: 1 !important;
-    // }
 }
 
 .end-date {
-    margin-top: -1rem;
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: #606265;
+}
+
+/* ======== Responsive ======== */
+@media (max-width: 600px) {
+    .stats-wrapper {
+        padding: 2.4rem;
+    }
+
+    .pledged-amount,
+    .percentage,
+    .backers-count {
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+    }
 }

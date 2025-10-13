@@ -38,6 +38,7 @@ const HeroBanner = () => {
                     </Button>
                 </div>
             </div>
+            
             <Modal show={showModal} onClose={handleCloseModal} title="Trailer">
                 <div className={cx('video-wrapper')}>
                     <iframe

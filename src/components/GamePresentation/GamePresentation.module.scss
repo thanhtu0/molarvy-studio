@@ -1,7 +1,14 @@
 .presentation-wrapper {
-    flex: 2;
     min-width: 0;
     color: var(--clr-white);
+    width: 100%;
+    max-width: 75rem;
+    flex: 2;
+    min-width: 32rem;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .video-container {
