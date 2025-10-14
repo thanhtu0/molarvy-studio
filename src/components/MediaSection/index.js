@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './MediaSection.module.scss';
 import SectionTitle from '~/components/common/SectionTitle';
-import MediaCard from '~/components/MediaCard';
+import MediaCard from '~/components/common/MediaCard';
 
 const cx = classNames.bind(styles);
 
