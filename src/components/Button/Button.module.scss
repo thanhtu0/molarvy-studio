@@ -2,8 +2,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 3.8rem;
-    padding: 1rem 2rem;
+    min-height: 3.8rem;
     font-weight: 400;
     font-size: 1.4rem;
     text-align: center;
@@ -12,6 +11,7 @@
     text-decoration: none;
     user-select: none;
     border-radius: 0.6rem;
+    transition: all 0.2s ease-in-out;
 
     + .button-styles {
         margin-left: 1rem;
@@ -25,6 +25,8 @@
 
 // Icon Button
 .icon {
+    display: flex;
+    align-items: center;
     font-size: 2.8rem;
 }
 
@@ -39,25 +41,32 @@
         font-size: 3.6rem;
         font-weight: 700;
         color: var(--clr-white);
-        transition: color 0.2s ease;
+        transition: color 0.2s ease, border 0.2s ease, padding 0.2s ease;
     }
 
     &:hover i {
         padding: 0.5rem;
         border: 0.1rem dashed var(--clr-white);
     }
+
+    @media (max-width: 768px) {
+        i {
+            font-size: 2.8rem;
+        }
+    }
 }
 
-//  Fill, Outline, viewMore Button
-
-.fill {
-    width: 20rem;
-    height: 5rem;
+// Fill, Outline Buttons
+.fill,
+.outline {
     font-size: 2rem;
     font-weight: 500;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 3rem;
+}
+
+.fill {
     color: var(--clr-white);
-    border-color: gray;
+    border: 1px solid var(--clr-gray);
     background-color: var(--clr-black);
 
     &:hover {
@@ -68,13 +77,8 @@
 }
 
 .outline {
-    width: 20rem;
-    height: 5rem;
-    font-size: 2rem;
-    font-weight: 500;
-    padding: 1.5rem 2rem;
     color: var(--clr-black);
-    border-color: var(--clr-black);
+    border: 1px solid var(--clr-black);
     background-color: var(--clr-white);
 
     &:hover {
@@ -84,34 +88,54 @@
     }
 }
 
-.viewMore {
-    background-color: #e6e6e6;
-    font-size: 2.2rem;
-    line-height: 4.4rem;
-    margin: 4.8rem 0 0;
-    padding: 1rem 8rem;
-    text-align: center;
-    border-radius: 0.5px solid var(--clr-black);
-
-    &:hover {
-        transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-    }
-}
-
+// Close Button
 .closeBtn {
     background: var(--clr-white);
     border: 0.8px solid var(--clr-white);
     border-radius: 0.4rem;
     font-size: 2rem;
-    line-height: 4rem;
-    padding: 0.6rem 1.2rem;
+    line-height: 1.5;
+    padding: 0.8rem 1.6rem;
     text-align: center;
 
     &:hover {
         color: var(--clr-white);
         background: #000;
         border-color: #000;
+    }
+}
+
+@media (max-width: 768px) {
+    .fill,
+    .outline {
+        font-size: 1.6rem;
+        padding: 1.2rem 2.4rem;
+    }
+
+    .closeBtn {
+        font-size: 1.6rem;
+    }
+}
+
+.viewMore {
+    background-color: #e6e6e6;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin: 4.8rem 0 0;
+    padding: 1rem 4rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 0.1rem solid var(--clr-black);
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
     }
 }
 
