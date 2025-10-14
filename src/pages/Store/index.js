@@ -5,7 +5,7 @@ import { bg_store } from '~/utils/images';
 
 const cx = classNames.bind(styles);
 
-const HeroBanner = () => {
+function StorePage() {
     return (
         <div className={cx('hero-banner-wrapper')} style={{ backgroundImage: `url(${bg_store})` }}>
             <div className={cx('overlay')}></div>
@@ -13,7 +13,7 @@ const HeroBanner = () => {
                 <h1 className={cx('main-media-title')}>Store</h1>
                 <div className={cx('button-group')}>
                     <a href="https://store.steampowered.com/app/123456" target="_blank" rel="noopener noreferrer">
-                        <Button outline leftIcon={<i class="fa-brands fa-steam"></i>}>
+                        <Button outline leftIcon={<i className="fa-brands fa-steam"></i>}>
                             Steam
                         </Button>
                     </a>
@@ -21,6 +21,6 @@ const HeroBanner = () => {
             </div>
         </div>
     );
-};
+}
 
-export default HeroBanner;
+export default StorePage;
