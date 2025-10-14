@@ -6,17 +6,24 @@
 }
 
 .logo {
-    width: 47rem;
+    width: 100%;
+    max-width: 47rem;
+    height: auto;
 }
 
 .description {
     max-width: 90rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 2.8rem;
     color: var(--clr-black);
 
     p {
         margin: 1.6rem 0;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.6rem;
+        line-height: 1.6;
     }
 }

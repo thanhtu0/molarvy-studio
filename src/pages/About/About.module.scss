@@ -1,30 +1,27 @@
 .about-page {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 10rem;
-    // background-color: #fff;
+    padding: 10rem 4rem 0 4rem;
+
+    @media (max-width: 768px) {
+        padding: 8rem 2rem 0 2rem;
+    }
 }
 
 .section-title {
     margin: 3.2rem 0 0;
-    font-size: 4.5rem;
-    font-weight: 500;
+    font-size: 5rem;
     text-align: center;
-    color: #222;
+    color: var(--clr-black);
+
+    @media (max-width: 768px) {
+        font-size: 3.6rem;
+    }
 }
 
 .team-grid {
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-
-    // Responsive
-    @media (max-width: 992px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-    }
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

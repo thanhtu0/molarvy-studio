@@ -9,8 +9,11 @@ const CompanyIntro = () => {
         <div className={cx('intro-wrapper')}>
             <img src={logo_remove_bg} alt="Molarvy Studio" className={cx('logo')} />
             <div className={cx('description')}>
-                <p>Team Cherry is an indie games developer in Adelaide, South Australia.</p>
-                <p>Our mission is to build crazy, exciting worlds for you to explore and conquer.</p>
+                <p>Molarvy Studio is an indie games developer in Hue, VietNam.</p>
+                <p>
+                    Molarvy Studio is a game development studio driven by creativity and passion. We craft immersive
+                    worlds, memorable characters, and meaningful experiences that inspire players around the globe.
+                </p>
             </div>
         </div>
     );
