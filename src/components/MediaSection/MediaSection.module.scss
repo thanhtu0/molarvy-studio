@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 5%;
+    padding: 6rem 5%;
 }
 
 .grid {
@@ -10,4 +10,14 @@
     grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
     gap: 2.5rem;
     width: 100%;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
 }

@@ -30,7 +30,7 @@ function MediaPage() {
         if (!modalContent) return null;
 
         if (modalContent.type === 'video') {
-            if (!modalContent.videoId) return <p>Không tìm thấy Video ID.</p>;
+            if (!modalContent.videoId) return <p>Video ID not found.</p>;
             return (
                 <div className={cx('video-responsive')}>
                     <iframe

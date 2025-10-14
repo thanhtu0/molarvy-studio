@@ -21,6 +21,16 @@
             color: #ff0808;
         }
     }
+
+    @media (max-width: 768px) {
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    @media (max-width: 480px) {
+        border-width: 3px;
+    }
 }
 
 .thumbnail-wrapper {
@@ -31,6 +41,8 @@
 .thumbnail {
     width: 100%;
     display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
 }
 
 .hover-overlay {
@@ -51,10 +63,22 @@
 .icon {
     font-size: 6.4rem;
     transition: color 0.3s ease;
+
+    @media (max-width: 768px) {
+        font-size: 4.8rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 3.6rem;
+    }
 }
 
 .title-container {
     padding: 1.2rem 1.5rem;
+
+    @media (max-width: 768px) {
+        padding: 0.8rem 1rem;
+    }
 }
 
 .title {
@@ -62,4 +86,14 @@
     font-weight: 600;
     color: var(--clr-white);
     margin: 0;
+    text-align: center;
+    word-wrap: break-word;
+
+    @media (max-width: 768px) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.3rem;
+    }
 }
