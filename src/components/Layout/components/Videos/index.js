@@ -11,7 +11,7 @@ function Videos() {
             {videosData.map((video, index) => {
                 const url = new URL(video.youtubeLink);
                 const searchParams = new URLSearchParams(url.search);
-                const embedId = searchParams.get('v'); // Lấy giá trị của tham số 'v'
+                const embedId = searchParams.get('v');
 
                 return (
                     <div key={index} className={cx('video-item')}>
