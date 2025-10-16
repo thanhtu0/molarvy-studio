@@ -1,22 +1,8 @@
-import classNames from 'classnames/bind';
-import styles from './Award.module.scss';
-import Section from '~/components/common/Section';
+import ListSection from '~/components/common/ListSection';
 import { awardsList } from '~/data/awardsData';
 
-const cx = classNames.bind(styles);
-
 function Awards() {
-    return (
-        <Section title="Awards & Recognition">
-            <ul className={cx('awards-list')}>
-                {awardsList.map((award, index) => (
-                    <li key={index} className={cx('award-item')}>
-                        {award}
-                    </li>
-                ))}
-            </ul>
-        </Section>
-    );
+    return <ListSection title="Awards & Recognition" items={awardsList} renderItem={(award) => <span>{award}</span>} />;
 }
 
 export default Awards;
