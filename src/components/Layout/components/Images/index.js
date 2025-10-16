@@ -2,7 +2,6 @@ import classNames from 'classnames/bind';
 import styles from './Image.module.scss';
 import Section from '~/components/common/Section';
 
-import { Link } from 'react-router-dom';
 import { imageList } from '~/data/imagesListPresskit';
 
 const cx = classNames.bind(styles);
@@ -18,7 +17,7 @@ function Images() {
             <p className={cx('image-caption')}>
                 There are far more images available for molarvy-studio, but these are the ones we felt would be most
                 useful to you. If you have specific requests, please{' '}
-                <Link to="mailto:contact@molarvy-studio.ch">contact us!</Link>
+                <a href="mailto:contact@molarvy-studio.ch">contact us!</a>
             </p>
         </Section>
     );

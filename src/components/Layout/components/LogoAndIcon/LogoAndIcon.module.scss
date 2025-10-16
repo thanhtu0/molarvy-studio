@@ -3,10 +3,11 @@
     padding: 1.2rem 1.5rem;
     border: 0.1rem solid #cce5ff;
     background-color: #f8f9fa;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
     color: var(--clr-link);
     text-decoration: none;
     transition: background-color 0.2s ease;
+    margin-bottom: 2rem;
 
     &:hover {
         background-color: #e2e6ea;

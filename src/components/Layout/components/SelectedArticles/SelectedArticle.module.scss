@@ -8,15 +8,15 @@
         position: absolute;
         left: 0;
         top: 0.9rem;
-        width: 0.6rem;
-        height: 0.6rem;
+        width: 0.75rem;
+        height: 0.75rem;
         background-color: var(--clr-black-1);
     }
 }
 
 .quote-text {
     margin: 0 0 0.1rem 0;
-    color: var(--blr-gray);
+    color: var(--clr-gray);
     line-height: 1.6;
 }
 
@@ -31,5 +31,17 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .article-item {
+        padding-left: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .quote-text,
+    .quote-attribution {
+        font-size: 1.2rem;
     }
 }
