@@ -54,10 +54,6 @@ function InterviewDetailPage() {
                 <h1 className={cx('title')}>{interview.title}</h1>
 
                 <div className={cx('content')}>
-                    {/* {interview.imageSrc && (
-                        <img src={interview.imageSrc} alt={interview.title} className={cx('main-image')} />
-                    )} */}
-
                     {interview.contentBlocks ? (
                         interview.contentBlocks.map((block, index) => <ContentBlock key={index} block={block} />)
                     ) : (
