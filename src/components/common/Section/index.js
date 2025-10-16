@@ -9,7 +9,7 @@ function Section({ title, children }) {
     }
 
     return (
-        <div className={cx('title-container')}>
+        <div className={cx('section-container')}>
             <h1 className={cx('section-title')}>{title}</h1>
             <div className={cx('section-content')}>{children}</div>
         </div>
