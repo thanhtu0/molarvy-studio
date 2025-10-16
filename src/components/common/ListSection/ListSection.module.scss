@@ -1,28 +1,26 @@
-.article-item {
-    margin: 0 0 2.5rem 0;
-    padding-left: 2rem;
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
     position: relative;
+    padding-left: 1.5rem;
 
     &::before {
         content: '';
         position: absolute;
         left: 0;
-        top: 0.9rem;
+        top: 0.6rem;
         width: 0.75rem;
         height: 0.75rem;
         background-color: var(--clr-black-1);
     }
-}
-
-.quote-text {
-    margin: 0 0 0.1rem 0;
-    color: var(--clr-gray);
-    line-height: 1.6;
-}
-
-.quote-attribution {
-    color: #555;
-    font-style: normal;
 
     a {
         color: var(--clr-link);
@@ -35,13 +33,7 @@
 }
 
 @media (max-width: 768px) {
-    .article-item {
-        padding-left: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .quote-text,
-    .quote-attribution {
+    .item {
         font-size: 1.2rem;
     }
 }
