@@ -1,12 +1,15 @@
 .detail-page {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
     min-height: 100vh;
-    padding: 12rem 2rem 6rem 2rem;
-    color: #fff;
+    padding: 12rem 5% 6rem 5%;
+    color: var(--clr-white);
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    @media (max-width: 768px) {
+        padding: 10rem 2rem 4rem 2rem;
+    }
 }
 
 .interview-article {
@@ -24,39 +27,68 @@
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 8px -10px 92px 39px rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: 8px -10px 92px 39px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 8px -10px 92px 39px rgba(0, 0, 0, 0.8);
+
+    @media (max-width: 1024px) {
+        padding: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+        background-attachment: scroll;
+    }
+
+    @media (max-width: 500px) {
+        padding: 2rem 1.5rem;
+        border-radius: 1.2rem;
+    }
 }
 
 .title {
     font-size: 8rem;
-    line-height: 8rem;
+    line-height: 1.1;
     font-weight: 500;
     text-align: left;
-    color: #fff;
-    margin: 0 0 0.8rem;
+    width: 100%;
+    color: var(--clr-white);
+    margin: 0 0 4rem 0;
     text-shadow: #ffffff4d 0rem 0rem 0.8rem;
-}
 
-.main-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 30px;
+    @media (max-width: 1024px) {
+        font-size: 6rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 4.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 3.2rem;
+    }
 }
 
 .content {
     text-align: justify;
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 1.8;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        font-size: 1.7rem;
+        line-height: 1.7;
+    }
 
     .meta-info {
         color: lightslategray;
+        font-size: 1.6rem;
+        line-height: 1.6;
     }
 
     .question {
         font-weight: 700;
-        color: #fff;
+        color: var(--clr-white);
 
         strong {
             margin-right: 0.8rem;
@@ -82,7 +114,13 @@
         margin: 4rem auto;
         max-width: 90%;
         border-radius: 1rem;
-        border: 0.25rem solid gray;
+        border: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 768px) {
+            margin: 2.5rem auto;
+            max-width: 100%;
+        }
     }
 
     .subheading {
@@ -92,7 +130,6 @@
 
     .external-link {
         display: inline;
-        text-align: left;
         font-weight: 700;
         color: #a4c8ff;
         text-decoration: none;
@@ -107,6 +144,6 @@
 .not-found {
     text-align: center;
     font-size: 2rem;
-    padding: 50px;
-    color: #fff;
+    padding: 5rem;
+    color: var(--clr-white);
 }

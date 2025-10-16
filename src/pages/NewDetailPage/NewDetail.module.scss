@@ -1,12 +1,18 @@
 .detail-page {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
     min-height: 100vh;
-    padding: 12rem 2rem 6rem 2rem;
-    color: #fff;
+    padding: 12rem 5% 6rem 5%;
+    color: var(--clr-white);
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    @media (max-width: 768px) {
+        padding: 10rem 2rem 4rem 2rem;
+    }
+    @media (max-width: 768px) {
+        padding: 8rem 1.5rem 4rem 1.5rem;
+    }
 }
 
 .new-article {
@@ -23,16 +29,46 @@
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+
+    @media (max-width: 1024px) {
+        padding: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 2.5rem;
+        border-radius: 1.5rem;
+        background-attachment: scroll;
+    }
+
+    @media (max-width: 500px) {
+        padding: 2rem 1.5rem;
+        border-radius: 1.2rem;
+    }
 }
 
 .title {
     font-size: 8rem;
-    line-height: 8rem;
+    line-height: 1.1;
     font-weight: 500;
     text-align: left;
-    color: #fff;
-    margin: 0 0 0.8rem;
+    word-wrap: break-word;
+    hyphens: auto;
+    width: 100%;
+    color: var(--clr-white);
+    margin: 0 0 4rem 0;
     text-shadow: #ffffff4d 0rem 0rem 0.8rem;
+
+    @media (max-width: 1024px) {
+        font-size: 6rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    @media (max-width: 500px) {
+        font-size: 3.2rem;
+    }
 }
 
 .main-image {
@@ -43,19 +79,29 @@
 }
 
 .content {
+    // Giới hạn 90 từ 1 dòng.
+    max-width: 90ch;
+    margin: 0 auto;
     text-align: justify;
-    font-size: 2rem;
-    line-height: 4rem;
+
+    @media (max-width: 768px) {
+        font-size: 1.7rem;
+        line-height: 1.7;
+    }
+    @media (max-width: 500px) {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
 
     .meta-info {
         color: lightslategray;
-        font-size: 2rem;
-        line-height: 4rem;
+        font-size: 1.6rem;
+        line-height: 1.6;
     }
 
     .question {
         font-weight: 700;
-        color: #fff;
+        color: var(--clr-white);
 
         strong {
             margin-right: 0.8rem;
@@ -65,11 +111,6 @@
     .statement {
         font-weight: 500;
         color: lightgoldenrodyellow;
-
-        &:hover {
-            text-decoration: underline;
-            font-weight: 800;
-        }
     }
 
     .answer {
@@ -80,8 +121,14 @@
         display: block;
         margin: 4rem auto;
         max-width: 90%;
+        height: auto;
         border-radius: 1rem;
         border: 0.25rem solid gray;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
     }
 
     .subheading {
@@ -108,4 +155,10 @@
     font-size: 2rem;
     padding: 50px;
     color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .new-article {
+        background-attachment: scroll;
+    }
 }

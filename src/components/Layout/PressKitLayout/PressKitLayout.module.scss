@@ -1,5 +1,7 @@
 .pressKit-container {
-    margin: 1.5rem 17.5rem;
+    max-width: 140rem;
+    margin: 1.5rem auto;
+    padding: 0 1.5rem;
     display: flex;
     gap: 3rem;
 }
@@ -11,4 +13,17 @@
 
 .main-content {
     flex-basis: 75%;
+}
+
+@media (max-width: 1024px) {
+    .pressKit-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    .sidebar-wrapper,
+    .main-content {
+        flex-basis: 100%;
+    }
 }
